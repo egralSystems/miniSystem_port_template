@@ -4,7 +4,7 @@ cmake_minimum_required(VERSION 3.16)
 MESSAGE("Initializing submodules")
 execute_process(
     COMMAND git submodule init
-    COMMAND git submodule update
+    COMMAND git submodule update --remote --merge
     WORKING_DIRECTORY ${CMAKE_CURRENT_LIST_DIR}
 )
 
